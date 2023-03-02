@@ -3,17 +3,6 @@
 tar_info = read.csv("/Users/meganlynch/Dropbox/Mac/Documents/CHIP/GeneSTAR_WES_manifest_plates1to11_02032023_long.csv", header=TRUE)
 length(tar_info[,1])
 
-
-### Which files do we need?
-### Which files are the 'panel of norms'
-
-# Somatic variant calling pipeline to detect CHIP (GATK ToolKit). Uses local haplotype assembly and Bayesian modelling to detect SNPs
-# and small indels.
-
-# Limit scan for putative CHIP variants to those contained in Supplemental Table 1.
-# canonical CHIP driver variants
-
-
 #    tar -xvf /dcl01/mathias1/data/Becker_WES/2002UNHS-0345/30402/30402.tar 30402.recal.bam.bai
 #    tar -xvf /dcl01/mathias1/data/Becker_WES/2002UNHS-0345/30402/30402.tar 30402.recal.bam
 
