@@ -41,6 +41,8 @@ for (i in 1:length(tar_info$clustersite))
 #m=3
 for (m in 1:length(tar_info[,1]))
 {
-  newline <- paste("tar -xvf ", clustersite_fix[m], tar_info$sample[m], "/", tar_info$sample[m], ".tar ", tar_info$sample[m],".recal.bam.bai", collapse="", sep="")
-  write(newline, file="/Users/meganlynch/Dropbox/Mac/Documents/CHIP/tarCommands_Bai.sh", append=T)
+  bai_line <- paste("tar -xvf ", clustersite_fix[m], tar_info$sample[m], "/", tar_info$sample[m], ".tar ", tar_info$sample[m],".recal.bam.bai", collapse="", sep="")
+  write(bai_line, file="tarCommands_Bai.sh", append=T)
+  bam_line <- paste("tar -xvf ", clustersite_fix[m], tar_info$sample[m], "/", tar_info$sample[m], ".tar ", tar_info$sample[m],".recal.bam", collapse="", sep="")
+  write(bam_line, file="tarCommands_Bam.sh", append=T)
 }
