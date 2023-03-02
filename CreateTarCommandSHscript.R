@@ -17,6 +17,12 @@ length(tar_info[,1])
 #    tar -xvf /dcl01/mathias1/data/Becker_WES/2002UNHS-0345/30402/30402.tar 30402.recal.bam.bai
 #    tar -xvf /dcl01/mathias1/data/Becker_WES/2002UNHS-0345/30402/30402.tar 30402.recal.bam
 
+write("#$ -cwd", file="tarCommands_Bai.sh")
+write("#$ -cwd", file="tarCommands_Bam.sh")
+
+
+write("cd /dcs04/mathias/data/mlynch/9_CHIP/bams", file="tarCommands_Bai.sh", append=T)
+write("cd /dcs04/mathias/data/mlynch/9_CHIP/bams", file="tarCommands_Bam.sh", append=T)
 
 
 #i=7
