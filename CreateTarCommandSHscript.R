@@ -41,3 +41,9 @@ for (m in 1:length(tar_info[,1]))
   bam_line <- paste("tar -xvf ", clustersite_fix[m], tar_info$sample[m], "/", tar_info$sample[m], ".tar ", tar_info$sample[m],".recal.bam", collapse="", sep="")
   write(bam_line, file="tarCommands_Bam.sh", append=T)
 }
+
+
+
+
+
+
