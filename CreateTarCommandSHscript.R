@@ -31,8 +31,6 @@ for (i in 1:length(tar_info$clustersite))
   }
 }
 
-
-
 #m=3
 for (m in 1:length(tar_info[,1]))
 {
