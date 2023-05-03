@@ -1,8 +1,4 @@
 #$ -cwd
-# File:	RunNormals.sh
-
-
-#$ -cwd
 # File: RunNormals.sh
 
 module load gatk/4.2.0.0
