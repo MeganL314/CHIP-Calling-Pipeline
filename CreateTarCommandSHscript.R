@@ -1,17 +1,14 @@
 ## Set up for Mutect2
 
-tar_info = read.csv("/Users/meganlynch/Dropbox/Mac/Documents/CHIP/GeneSTAR_WES_manifest_plates1to11_02032023_long.csv", header=TRUE)
+tar_info = read.csv("/path/to/BamIDs.csv", header=TRUE)
 length(tar_info[,1])
-
-#    tar -xvf /dcl01/mathias1/data/Becker_WES/2002UNHS-0345/30402/30402.tar 30402.recal.bam.bai
-#    tar -xvf /dcl01/mathias1/data/Becker_WES/2002UNHS-0345/30402/30402.tar 30402.recal.bam
 
 write("#$ -cwd", file="tarCommands_Bai.sh")
 write("#$ -cwd", file="tarCommands_Bam.sh")
 
 
-write("cd /dcs04/mathias/data/mlynch/9_CHIP/bams", file="tarCommands_Bai.sh", append=T)
-write("cd /dcs04/mathias/data/mlynch/9_CHIP/bams", file="tarCommands_Bam.sh", append=T)
+write("cd /path/to/bams", file="tarCommands_Bai.sh", append=T)
+write("cd /path/to/bams", file="tarCommands_Bam.sh", append=T)
 
 
 #i=7
