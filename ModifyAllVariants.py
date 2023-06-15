@@ -2,13 +2,7 @@ import csv
 
 
 with open("allvariants.csv", "r") as file:
-	Vcounts = {}
-	Gcounts = {}
-	#AD = {}
-	#DP = {}
-	#F1R2 = {}
-	#F2R1 = {}
-	
+
 	# GT:AD:AF:DP:F1R2:F2R1:SB
 	# reader = csv.reader(file) #tells python package to allow to parse file
 	# next(row) #will skip the first row
